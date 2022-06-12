@@ -24,13 +24,13 @@
         </ul>
         <ul class="contacts">
             <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="button link">
+                <a href="mailto:info@devstudio.com" class="contacts__link">
                 <svg class="contacts__icon" width="16" height="16">
                    <use href="./images/symbol-defs.svg#mail"></use>
                 </svg>info@devstudio.com</a>
             </li>
             <li class="contacts__item">
-                <a href="" class="button link"> 
+                <a href="" class="contacts__link"> 
                 <svg class="contacts__icon" width="10" height="16">
                     <use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>+38 096 111 11 11</a>
@@ -45,7 +45,7 @@
     <div class="overlay">
         <section class="hero">
             <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
-            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
+            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 
@@ -77,21 +77,21 @@
                     </label>
 
                     <label class="user user--comment" for="comment">Комментарий</label>
-                    <textarea class="user-texterea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                    <textarea class="user__texterea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
 
                     
-                    <label class="user user--privacy">
-                        <input class="user-input-checkbox" type="checkbox" name="">
-                        <span class="check-icon"></span>
-                        Соглашаюсь с рассылкой и принимаю <a href="" class="link-checkbox"> Условия договора</a>
+                    <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="">
+                        <span class="checkbox__icon"></span>
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox__link"> Условия договора</a>
                     </label>
                     
                 </div>
-                    <button type="submit" class="modal-button">Отправить</button>
+                    <button type="submit" class="modal__button">Отправить</button>
                 </form>
                 
-                <button class="close-modal" data-modal-close>
-                    <svg class="modal-icon-close" width="18" height="18">
+                <button class="modal-close" data-modal-close>
+                    <svg class="modal-close__icon" width="18" height="18">
                         <use href="./images/symbol-defs.svg#close-black"></use>
                     </svg>
                 </button>

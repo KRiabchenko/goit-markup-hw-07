@@ -66,41 +66,7 @@ h2, h3, ul {
 
 /* ------------------- BUTTON --------------- */
 
-.button {
-    display: inline-flex;
-    color: var(--primary-text-color);
-    background-color: var(--primary-bgc-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-/* .button.link-mail::before {
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px; 
-    background-image: url(../images/mail-icon.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.button.link-tel::before {
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/smartphone-icon.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
-.button.primary {
+.hero__button {
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
@@ -121,13 +87,6 @@ h2, h3, ul {
 
     transition: color 250ms var(--timing-function);
 }
-
-.button.link:hover,
-.button.link:focus {
-    display: flex;
-    color: var(--accent-color);
-}
-
 
 /* ------------------- PAGE HEADER -------------- */
 .main {
@@ -226,6 +185,24 @@ align-items: center;
 
 .contacts__item:first-child {
     margin-left: 0px;
+}
+
+.contacts__link {
+    display: inline-flex;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bgc-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    display: flex;
+    color: var(--accent-color);
 }
 
 .contacts__icon {
@@ -388,18 +365,18 @@ align-items: center;
     fill: var(--accent-color);
 }
 
-.user-comment {
+.user--comment {
     margin-bottom: 0;
 }
 
-.user-texterea {
+.user__texterea {
     resize: none;
     height: 120px;
     padding: 12px 16px;
     margin-bottom: 20px;
 }
 
-.user-texterea::placeholder {
+.user__texterea::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -409,7 +386,7 @@ align-items: center;
     color: rgba(117, 117, 117, 0.5)
 }
 
-.user--privacy {
+.checkbox {
     display: flex;
     align-items: center;
     text-align: center;
@@ -422,7 +399,7 @@ align-items: center;
     letter-spacing: 0.03em;
 }
 
-.check-icon {
+.checkbox__icon {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -431,7 +408,7 @@ align-items: center;
     border-radius: 3px;
 }
 
-.user-input-checkbox {
+.checkbox__input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -442,7 +419,7 @@ align-items: center;
     clip: rect(0 0 0 0);
 }
 
-.user-input-checkbox:checked + .check-icon {
+.checkbox__input:checked + .checkbox__icon {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     background-image: url(../images/check.svg);
@@ -451,7 +428,12 @@ align-items: center;
     background-size: contain;  
 }
 
-.modal-button {
+.checkbox__link {
+    color: var(--accent-color);
+    margin-left: 2px;
+}
+
+.modal__button {
     width: 200px;
     margin-top: 30px;
     padding: 10px 55px;
@@ -473,12 +455,12 @@ align-items: center;
     transition: background-color 250ms var(--timing-function);
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal__button:hover,
+.modal__button:focus {
     background-color: #188CE8;
 }
 
-.close-modal {
+.modal-close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -493,7 +475,7 @@ align-items: center;
     cursor: pointer;
 }
 
-.modal-icon-close {
+.modal-close__icon {
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -503,15 +485,11 @@ align-items: center;
     transition: fill 250ms var(--timing-function);
 }
 
-.close-modal:focus-within > .modal-icon-close,
-.close-modal:hover > .modal-icon-close {
+.modal-close:focus-within > .modal-close__icon,
+.modal-close:hover > .modal-close__icon {
     fill: var(--accent-color);
 }
 
-.link-checkbox {
-    color: var(--accent-color);
-    margin-left: 2px;
-}
 
 /* ---------------------- FEATURES ---------------- */
 .section--features {
