@@ -171,7 +171,7 @@
 .checkbox__input:checked+.checkbox__icon {
     background-color: $accent-color;
     border-color: $accent-color;
-    background-image: url(../../images/check.svg);
+    background-image: url('../../images/check.svg');
     background-origin: border-box;
     background-repeat: no-repeat;
     background-size: contain;
