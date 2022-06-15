@@ -130,10 +130,6 @@
     transition: fill 250ms $timing-function;
 }
 
-// .user:focus-within>.user__icon {
-//     fill: $accent-color;
-// }
-
 .user--comment {
     margin-bottom: 0;
 }
@@ -156,10 +152,8 @@
 }
 
 .checkbox {
-    display: flex;
-    align-items: center;
+    @include centeredFlex (flex);
     text-align: center;
-    justify-content: center;
     padding-left: 9px;
     padding-top: 4px;
     margin: 0;

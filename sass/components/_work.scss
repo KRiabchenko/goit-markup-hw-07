@@ -63,11 +63,10 @@
 }
 
 .command-social__link {
-    display: flex;
+    @include centeredFlex (flex);
+    
     width: 44px;
     height: 44px;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     fill: #AFB1B8;
 

@@ -14,9 +14,8 @@
 }
 
 .clients__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex (flex);
+    
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;

@@ -48,9 +48,7 @@
 
 /* ------------------- PORTFOLIO BUTTONS --------------- */
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex (flex);
     margin-bottom: 50px;
 
 }
