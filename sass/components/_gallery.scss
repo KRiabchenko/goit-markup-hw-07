@@ -61,13 +61,12 @@
         }
 }
 
-
 .buttons__link {
     padding: 6px 22px;
 
     color: $title-text-color;
     background-color: $secondary-bgc-color;
-    border-color: $secondary-bgc-color;
+    border-color: transparent;
 
     font-family: inherit;
     font-weight: 500;

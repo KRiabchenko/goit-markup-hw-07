@@ -36,6 +36,13 @@ ul {
   border: 1px solid transparent;
 }
 
+.features__text, .team__function, .card-set__text {
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,8 +220,8 @@ ul {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-color: #C4C4C4;
   background-repeat: no-repeat;
   background-position: center;
@@ -426,7 +433,7 @@ ul {
 .checkbox__input:checked + .checkbox__icon {
   background-color: #2196F3;
   border-color: #2196F3;
-  background-image: url(../../images/check.svg);
+  background-image: url("../../images/check.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
   background-size: contain;
@@ -480,6 +487,7 @@ ul {
 
 .section--features {
   padding-bottom: 0;
+  padding-top: 94px;
 }
 
 .features {
@@ -502,12 +510,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 1.7;
-}
-
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 0;
+  line-height: 1.71;
 }
 
 .features__item {
@@ -978,7 +981,6 @@ ul {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .foto {
@@ -1050,7 +1052,7 @@ ul {
   padding: 6px 22px;
   color: #212121;
   background-color: #F5F4FA;
-  border-color: #F5F4FA;
+  border-color: transparent;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
