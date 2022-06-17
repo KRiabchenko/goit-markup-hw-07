@@ -117,7 +117,7 @@
 }
 
 .user--comment {
-    margin-bottom: 0;
+    margin-bottom: 4px;
 }
 
 .user__texterea {
@@ -125,6 +125,8 @@
     height: 120px;
     padding: 12px 16px;
     margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 
     &::placeholder {
             font-style: normal;
@@ -182,8 +184,9 @@
 //     border-color: $accent-color;
 // }
 
-.checkbox__input:checked+.checkbox .checkbox__icon {
+.checkbox__input:checked+ .checkbox__icon {
     fill: $white-color;
+    border: 0.2px solid #FFFFFF;
 }
 
 
